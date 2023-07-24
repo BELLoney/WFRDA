@@ -5,6 +5,7 @@ function AS=WFRDA(data,sigma)
 %%%input:
 % data is data matrix without decisions, where rows for samples and columns for attributes. 
 % Numeric attribute data is normalized to [0,1].
+% Sigma is an adjustable parameter.
 %%%output
 % Weighted fuzzy rough density-based anomaly score (AS).
 [n,m]=size(data); %
