@@ -1,6 +1,7 @@
 %%% A weighted fuzzy rough density-based anomaly (WFRDA) algorithm
 %%% Please refer to the following papers: 
 %%% Anomaly detection based on weighted fuzzy-rough density, Information Sciences, 2023
+%%% Uploaded by Yuan Zhong on July 24, 2021. E-mail:yuanzhong2799@foxmail.com.
 function AS=WFRDA(data,sigma)
 %%%input:
 % data is data matrix without decisions, where rows for samples and columns for attributes. 
