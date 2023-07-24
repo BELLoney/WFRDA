@@ -3,7 +3,6 @@ clear
 clear all;
 format shortG;
 
-
 load Example_WFRDA
 
 Dataori=Example;
