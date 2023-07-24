@@ -1,12 +1,13 @@
-%%%% A weighted fuzzy rough density-based anomaly (WFRDA) algorithm
+%%% A weighted fuzzy rough density-based anomaly (WFRDA) algorithm
 %%% Please refer to the following papers: 
-%%% A weighted fuzzy rough density-based anomaly,2022
-function WFDens=WFRDA(data,sigma)
+%%% Anomaly detection based on weighted fuzzy-rough density, Information Sciences, 2023
+function AS=WFRDA(data,sigma)
 %%%input:
 % data is data matrix without decisions, where rows for samples and columns for attributes. 
+% Numeric attribute data is normalized to [0,1].
 %%%output
-% Weighted density,i.e.,inlier score
-[n,m]=size(data); % n为样本数 m为属性个数(最后一列为决策属性)
+% Weighted fuzzy rough density-based anomaly score (AS).
+[n,m]=size(data); %
 
 delta=zeros(1,m);%Initialize the radius  
 for k=1:m
@@ -32,8 +33,8 @@ FADens(1:n,k)=sum(rm_temp,2)./n;
 end
 %%
 W=E./sum(E);
-WFDens=zeros(n,1);
+AS=zeros(n,1);
 for i=1:n
-    WFDens(i)=sum((1-FADens(i,:)).*W);
+    AS(i)=sum((1-FADens(i,:)).*W);
 end
 end
