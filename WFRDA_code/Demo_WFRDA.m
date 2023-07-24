@@ -13,5 +13,5 @@ trandata(:,2:3)=normalize(trandata(:,2:3),'range');
 
 sigma=0.5;
 
-out_scores=WFRDA(trandata,sigma)
+anomaly_scores=WFRDA(trandata,sigma)
 
