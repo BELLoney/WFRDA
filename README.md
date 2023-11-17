@@ -44,7 +44,7 @@ If you find WFRDA useful in your research, please consider citing:
 ```
 @article{yuan2023anomaly,
 title = {Anomaly detection based on weighted fuzzy-rough density},
-author = {Yuan, Zhong and Chen, Bai Yang  and Liu, Jia  and Chen, Hong Mei  and Peng, De Zhong  and Li, Pei Lin},
+author = {Yuan, Zhong and Chen, Bai Yang and Liu, Jia  and Chen, Hong Mei  and Peng, De Zhong  and Li, Pei Lin},
 journal = {Applied Soft Computing},
 volume = {134},
 pages = {109995},
